@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Poppins:wght@200;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url("images/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  --light-color: #fff;
+  height: 370px;
+  width: 300px;
+  background: var(--light-color);
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  box-shadow: 0px 0px 15px 0px black;
+}
+.chat-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0px 30px;
+  background-color: #747576;
+  color: var(--light-color);
+  font-size: 1.5rem;
+}
+
+.chat-header .logo {
+  height: 40px;
+  width: 40px;
+
+}
+.chat-header img {
+  height: 100%;
+  width: 100%;
+}
+.chat-header .title {
+  padding-left: 10px;
+}
+
+.chat-body {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 10px;
+  align-items: flex-end;
+  overflow-y: auto;
+}
+.chat-input {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+.input-sec {
+  flex: 9;
+}
+.send {
+  flex: 1;
+  padding-right: 4px;
+  height: 15px;
+  width: 15px;
+}
+#txtInput {
+  line-height: 30px;
+  padding: 8px 10px;
+  border: none;
+  outline: none;
+  caret-color: black;
+  font-size: 1rem;
+  width: 100%;
+}
+.chat-open {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+}
+
+.content
+{
+  height: 900px;
+  width: 900px;
+  margin: 20px auto;
+  margin-top:20px;
+  border-radius:15px;
+  box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+ background: rgb(255, 255, 255); /* Old browsers */
+ padding: 10px;
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bc635', endColorstr='#c0ea67',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+
+
+.chatbot-message,
+.user-message {
+  padding: 8px;
+  background: #ccc;
+  margin: 5px;
+  width: max-content;
+  border-radius: 10px 3px 10px 10px;
+}
+.chatbot-message {
+  background: #cccfd2;
+
+  align-self: flex-start;
+  border-radius: 10px 10pxW 3px 10px;
+}
+
+
+* {box-sizing:border-box}
+
+
+
+.bigLogo
+{
+  position: absolute; /* Position the child element absolutely */
+  top: 20%;
+  left: 50%; /* Move the left edge of the child to the horizontal center of the parent */
+  transform: translate(-50%, -50%); /* Translate the child back by half of its width and height */
+  
+}
+
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-height: 400px;
+  max-width: 1000px;
+  position: relative;
+  object-fit: cover;
+  overflow: hidden;
+  margin: auto;
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
