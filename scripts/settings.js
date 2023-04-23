@@ -1,7 +1,7 @@
 
 var chatWidgetSettings = {
-    URI: 'https://oda-55639e9c408d4c73bd6601e34b08e26b-da6d747a.data.digitalassistant.oci.oraclecloud.com',
-    channelId: 'c4a64c35-bad6-4767-9692-b8249bb370e3'
+    URI: 'https://oda-15fdd5a7f2fd4570bed15b6a1f9b37c3-da6d747a.data.digitalassistant.oci.oraclecloud.com',
+    channelId: '25ca5782-6671-41ba-9af8-58c316904e2e'
 };
 function initSdk(name) {
     // Default name is Bots
