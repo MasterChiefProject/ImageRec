@@ -11,19 +11,18 @@
     <script src="slideshow.js" defer></script>
   </head>
   <body>
-    <br>
-    
+    <br />
+
     <div class="content">
       <div>
-        <img src="images/Farmacy.png" class="bigLogo"/>
-
+        <img src="images/Farmacy.png" class="bigLogo" />
       </div>
       <br />
       <br />
       <br />
       <br />
-      <br>
-      <br>
+      <br />
+      <br />
 
       Welcome to our agricultural and crop site! As a farmer, we understand that
       maintaining healthy crops is essential for a successful harvest. Our
@@ -81,8 +80,16 @@
     <script src="scripts/settings.js"></script>
     <script src="scripts/web-sdk.js" onload="initSdk('Bots')"></script>
 
-    <div class="chat-open">
-      <img src="images/Leaf.png" alt="cwt" onclick="ShowChat()" />
+    <button class="toggle-btn" id="toggle-btn">Click to toggle</button>
+    <div id="my-div">
+      <div class="inner-my-div">
+      <h1>File Upload</h1>
+      <input type="file" id="file-input"  aria-label="File browser example">/>
+      <button id="myButton">Upload</button>
+      <div id="status"></div>
+      <script src="files.js"></script>
+    </div>
+      </script>
     </div>
   </body>
 </html>
