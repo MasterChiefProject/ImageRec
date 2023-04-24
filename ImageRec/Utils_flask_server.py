@@ -33,19 +33,7 @@ app = Flask(__name__)
 
 
 
-@app.route('/', methods=['GET', 'POST'])
-def index():    
-     return render_template('Chat_Ui.html')
 
-
-
-
-
-
-
-
-if __name__ == '__main__':
-    app.run(debug=1)
 
 
 
@@ -137,14 +125,21 @@ print(od_results)
 
 # print(od_results['labels'])
 
-
-
 labels_results = od_results['labels']
 print(labels_results)
 print(labels_results[0]['confidence'])
 
+# convert data to numpy arrays
 x = np.array([labels_results[0]['name'], labels_results[1]['name'], labels_results[2]['name'], labels_results[3]['name'], labels_results[4]['name']])
 y = np.array([labels_results[0]['confidence'], labels_results[1]['confidence'], labels_results[2]['confidence'], labels_results[3]['confidence'], labels_results[4]['confidence']])
+
+# find index of highest confidence value
+max_idx = np.argmax(y)
+
+# get corresponding name from x array
+max_name = x[max_idx]
+
+print("Highest confidence label: ", max_name)
 
 plt.figure(figsize=(13,6))
 plt.bar(x,y)
@@ -153,9 +148,14 @@ plt.show()
 print(max(y))
 print()
 
-# print("The result is :")
+@app.route('/', methods=['GET', 'POST'])
+def index():    
+     return render_template('Chat_Ui.html', max_name=max_name)
 
 
 
+# if __name__ == '__main__':
+#    app.run()
 if __name__ == '__main__':
-   app.run()
+    app.run(debug=True)
+
